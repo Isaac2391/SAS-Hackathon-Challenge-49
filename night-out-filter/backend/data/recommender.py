@@ -23,3 +23,22 @@ def calculate_ofs(venue, mood, budget):
         score += 1  # extra points if affordable
     score += random.randint(0, 2)  # optional variety
     return min(score, 10)  # cap at 10
+
+#Main recommendation function
+def get_recommendations(mood, budget, occasion):
+    venues = load_venues()
+    
+    # Apply filters
+    filtered = filter_by_budget(venues, budget)
+    filtered = filter_by_mood(filtered, mood) if filtered else venues
+
+    # Score each venue
+    for v in filtered:
+        v["ofs"] = calculate_ofs(v, mood, budget)
+    
+    # Sort by fun score and return top 5
+    top5 = sorted(filtered, key=lambda x: x["ofs"], reverse=True)[:5]
+
+    return top5
+
+
