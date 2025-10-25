@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Event Selector </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Night Out Recommender</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class ="body-event">
+  <header>
+  <h1>Event Planner Glasgow</h1>
+  <nav>
+    <a href="index.html"><button>Home</button></a>
+    <a href="EventSwiping.html"><button>Plan Event</button></a>
+    <a href="suggestions.html"><button>Suggestions</button></a>
+  </nav>
+</header>
+
+  <div class="app-container">
+    <h1>🎉 Find Your Perfect Night Out 🎉</h1>
+    <div id="card-container">
+      <!-- Cards will be inserted here by JS -->
+    </div>
+    <div class="buttons">
+      <button id="dislike">👎</button>
+      <button id="like">👍</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
