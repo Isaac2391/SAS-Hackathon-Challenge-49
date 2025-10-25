@@ -42,7 +42,7 @@ def suggest_venues():
     if not team_profile:
         return []
 
-    venues = pb.get_venues(limit=50)
+    venues = pb.get_venues()
 
     # simple scoring: +1 for each tag that matches a top trait
     sorted_traits = sorted(team_profile.items(), key=lambda x: x[1], reverse=True)
