@@ -36,10 +36,3 @@ def Search(search_category):
         
         places_results = gmaps.places_nearby(page_token = places_results["next_page_token"])
         pagelist.extend(places_results["results"])
-    
-
-
-    
-    
-    
-    

@@ -38,6 +38,9 @@ body {
 
 button {cursor: pointer;}
 
+
+/* Landing Page */ 
+
 #Main-Title {
     width: 100vw; height: 10vh;
      text-align: center; margin-top: 2vh; 
@@ -112,3 +115,8 @@ button {cursor: pointer;}
   height: 40vh; width: 38vw; 
   border-radius: 6%; 
 }
+
+/* Event Swiping Page */ 
+
+
+
