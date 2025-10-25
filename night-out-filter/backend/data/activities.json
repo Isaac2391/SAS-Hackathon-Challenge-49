@@ -1,20 +1,92 @@
 [
   {
-    "id": "1",
-    "name": "Joe's Karaoke Bar",
-    "description": "Sing your heart out with friends in a fun atmosphere.",
-    "tags": ["karaoke", "cheap", "nightlife"],
-    "price": "Medium",
-    "address": "123 Main St, City",
-    "image_url": "https://example.com/joes.jpg"
+    "id": 1,
+    "name": "Flight Club Glasgow",
+    "category": "Activity",
+    "description": "Interactive darts and cocktails in Merchant City.",
+    "base_cost": 25,
+    "location": "Merchant City",
+    "tags": ["Competitive", "Social", "Christmas", "Team Bonding", "Fun"]
   },
   {
-    "id": "2",
-    "name": "Trivia Night at The Loft",
-    "description": "Test your knowledge and win prizes every Wednesday.",
-    "tags": ["trivia", "medium", "group_activity"],
-    "price": "Low",
-    "address": "456 Center Ave, City",
-    "image_url": "https://example.com/trivia.jpg"
+    "id": 2,
+    "name": "The Pot Still",
+    "category": "Bar",
+    "description": "Cozy whisky pub with an unmatched whisky selection.",
+    "base_cost": 15,
+    "location": "Hope Street",
+    "tags": ["Chill", "Whisky", "Hidden Gem", "Casual", "After Work"]
+  },
+  {
+    "id": 3,
+    "name": "Boom Battle Bar",
+    "category": "Activity",
+    "description": "Lively venue with axe throwing, beer pong, and karaoke.",
+    "base_cost": 30,
+    "location": "St Enoch Centre",
+    "tags": ["Energetic", "Competitive", "Group", "Loud", "Weekend"]
+  },
+  {
+    "id": 4,
+    "name": "King Tut’s Wah Wah Hut",
+    "category": "Live Music",
+    "description": "Legendary venue known for intimate gigs and local acts.",
+    "base_cost": 20,
+    "location": "St Vincent Street",
+    "tags": ["Music", "Energetic", "Hidden Gem", "Social", "Weekend"]
+  },
+  {
+    "id": 5,
+    "name": "Escape Glasgow",
+    "category": "Activity",
+    "description": "Popular escape room experience with themed challenges.",
+    "base_cost": 22,
+    "location": "Bath Street",
+    "tags": ["Team Bonding", "Puzzle", "Competitive", "Indoor", "Adventurous"]
+  },
+  {
+    "id": 6,
+    "name": "Nice N Sleazy",
+    "category": "Bar",
+    "description": "Underground bar offering live music, drinks, and late vibes.",
+    "base_cost": 18,
+    "location": "Sauchiehall Street",
+    "tags": ["Music", "Casual", "Late Night", "Hidden Gem", "Indie"]
+  },
+  {
+    "id": 7,
+    "name": "Paesano Pizza",
+    "category": "Restaurant",
+    "description": "Laid-back spot serving authentic Neapolitan pizza.",
+    "base_cost": 20,
+    "location": "Miller Street",
+    "tags": ["Food", "Casual", "Affordable", "Chill", "Social"]
+  },
+  {
+    "id": 8,
+    "name": "The Corinthian Club",
+    "category": "Bar",
+    "description": "Elegant bar and restaurant housed in a historic building.",
+    "base_cost": 35,
+    "location": "Ingram Street",
+    "tags": ["Fancy", "Cocktails", "Classy", "Romantic", "Celebration"]
+  },
+  {
+    "id": 9,
+    "name": "Swing",
+    "category": "Activity",
+    "description": "Indoor mini golf with drinks, music, and neon lights.",
+    "base_cost": 28,
+    "location": "Dundas Lane",
+    "tags": ["Fun", "Group", "Competitive", "Modern", "Weekend"]
+  },
+  {
+    "id": 10,
+    "name": "The Blue Arrow",
+    "category": "Live Music",
+    "description": "Jazz club offering smooth tunes and relaxed vibes.",
+    "base_cost": 25,
+    "location": "Sauchiehall Street",
+    "tags": ["Jazz", "Chill", "Hidden Gem", "Music", "Evening"]
   }
 ]
