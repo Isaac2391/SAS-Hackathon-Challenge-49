@@ -16,7 +16,7 @@ A simple CSS preset to enable box-sizing, set some text rendering options to dec
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-kerning: auto;
-  outline: red solid 1px; 
+  outline: 1px solid red; 
 }
 
 html {
@@ -66,13 +66,14 @@ body {
 }
 
 #PageBanner{
-  display: flex; align-content: center; justify-content: center;
+  display: flex; align-content: center; justify-content: center; gap: 5%;
   width: 100vw; height: 30vh; margin-top: 5vh;
   background-color: whitesmoke; 
 }
 
 #PageBanner-TextContent {
-  text-align: end; margin-right: 50vw;
+  text-align: end; margin-right: 0vw; 
+  width: 50vw; height: 30vh;
 }
 
 #PageBanner-Title { 
@@ -81,4 +82,16 @@ body {
 
 #PageBanner-Caption { 
   color: #005ED1; font-weight: 570;
+}
+
+#PageBanner-Button { 
+
+  background-color: #005ED1; color: whitesmoke; border: 0px; 
+  padding: 2%; border-radius: 7%; 
+  font-weight: bold; 
+
+}
+
+#BannerImage { 
+  height: 40vh; width: 40vw;
 }
