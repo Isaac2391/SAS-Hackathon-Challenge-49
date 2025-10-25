@@ -2,7 +2,7 @@ import json
 import random
 
 # Load venues from JSON file
-def load_venues(file_path="venues.json"):
+def load_venues(file_path="backend/data/activities.json"):
     with open(file_path, 'r') as file:
         venues = json.load(file)
     return venues
