@@ -16,7 +16,6 @@ A simple CSS preset to enable box-sizing, set some text rendering options to dec
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-kerning: auto;
-  outline: 1px solid red; 
 }
 
 html {
@@ -38,9 +37,8 @@ body {
 }
 
 #Main-Title {
-
     width: 100vw; height: 10vh;
-     text-align: center; margin-bottom: -3.5vh; 
+     text-align: center; margin-bottom: -3vh; margin-top: 2vh; 
      font-size: 3rem; font-family: 'Playfair';
 }
 
@@ -56,7 +54,7 @@ body {
   background-color: whitesmoke; 
   display: flex; justify-content: center; align-items: center; gap: 7vw;
   width: 100vw; height: 30vh; border-radius: 5%;
-  box-shadow: 15px 15px 15px 15px rgb(0 0 150 / 0.8); padding: 9%;
+  box-shadow: 15px 2px 20px 5px gainsboro; padding: 9%;
 
 }
 
@@ -68,30 +66,37 @@ body {
 #PageBanner{
   display: flex; align-content: center; justify-content: center; gap: 5%;
   width: 100vw; height: 30vh; margin-top: 5vh;
-  background-color: whitesmoke; 
+  background-color: #005EB8; 
 }
 
 #PageBanner-TextContent {
   text-align: end; margin-right: 0vw; 
-  width: 50vw; height: 30vh;
+  width: 50vw; height: 40vh;
 }
 
 #PageBanner-Title { 
-  color: #005EB8;
+  width: fit-content; height: fit-content; padding: 2%; 
+  color: #005EB8; background-color: whitesmoke;
+  font-family: 'Playfair';
+  margin-left: 20vw; 
 }
 
 #PageBanner-Caption { 
-  color: #005ED1; font-weight: 570;
+  color: whitesmoke; 
+  font-weight: 570; font-style: italic; 
+  border-radius: 7%;
+  height: 10vw; height: 12vh; padding: 2%; 
 }
 
 #PageBanner-Button { 
 
-  background-color: #005ED1; color: whitesmoke; border: 0px; 
+  background-color: whitesmoke; color: #005ED1; border: 0px; 
   padding: 2%; border-radius: 7%; 
   font-weight: bold; 
 
 }
 
 #BannerImage { 
-  height: 40vh; width: 40vw;
+  height: 40vh; width: 38vw; 
+  border-radius: 6%; 
 }
