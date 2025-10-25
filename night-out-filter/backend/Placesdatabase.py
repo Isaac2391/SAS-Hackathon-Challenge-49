@@ -31,4 +31,3 @@ def UserStorage(Name):
     conn.close()
 
 initialisedb() 
-.tables()
