@@ -1,11 +1,14 @@
 import sqlite3
-import Placesdatabase as pb
+from pathlib import Path
+import Placesdatabase as pb  # lowercase import (case-sensitive on some systems)
+
+DB_PATH = Path(__file__).resolve().parent / "places.db"
 
 pb.setup_db()
 
 def get_team_preferences():
     # pull all users from the people table and average their traits
-    conn = sqlite3.connect("places.db")
+    conn = sqlite3.connect("DB_PATH")
     c = conn.cursor()
 
     c.execute("SELECT Social, Competitive, Hidden_Gem, Casual, Celebration, Energetic FROM people")
