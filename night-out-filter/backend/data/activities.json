@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Joe's Karaoke Bar",
+    "description": "Sing your heart out with friends in a fun atmosphere.",
+    "tags": ["karaoke", "cheap", "nightlife"],
+    "price": "Medium",
+    "address": "123 Main St, City",
+    "image_url": "https://example.com/joes.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Trivia Night at The Loft",
+    "description": "Test your knowledge and win prizes every Wednesday.",
+    "tags": ["trivia", "medium", "group_activity"],
+    "price": "Low",
+    "address": "456 Center Ave, City",
+    "image_url": "https://example.com/trivia.jpg"
+  }
+]
