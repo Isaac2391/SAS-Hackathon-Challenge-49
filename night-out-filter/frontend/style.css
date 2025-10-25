@@ -16,6 +16,7 @@ A simple CSS preset to enable box-sizing, set some text rendering options to dec
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-kerning: auto;
+  outline: red solid 1px; 
 }
 
 html {
@@ -39,14 +40,14 @@ body {
 #Main-Title {
 
     width: 100vw; height: 10vh;
-     text-align: center; margin-bottom: 0; 
+     text-align: center; margin-bottom: -3.5vh; 
      font-size: 3rem; font-family: 'Playfair';
 }
 
 #Second-MainTitle { 
     background-color: whitesmoke; color: #005EB8; 
     width: 100vw; height: 6vh; 
-    text-align: center; margin-bottom: 10; 
+    text-align: center; margin-bottom: 7vh; 
     font-size: 1.2rem; font-family: 'Montserrat';
 }
 
@@ -55,13 +56,29 @@ body {
   background-color: whitesmoke; 
   display: flex; justify-content: center; align-items: center; gap: 7vw;
   width: 100vw; height: 30vh; border-radius: 5%;
-  box-shadow: 10px 10px 15px 10px rgb(0 0 150 / 0.8); padding: 9%;
+  box-shadow: 15px 15px 15px 15px rgb(0 0 150 / 0.8); padding: 9%;
 
 }
 
 .TopImage.Image {
-
   width: 22vw; height: 35vh; 
   border-radius: 10%;
+}
 
+#PageBanner{
+  display: flex; align-content: center; justify-content: center;
+  width: 100vw; height: 30vh; margin-top: 5vh;
+  background-color: whitesmoke; 
+}
+
+#PageBanner-TextContent {
+  text-align: end; margin-right: 50vw;
+}
+
+#PageBanner-Title { 
+  color: #005EB8;
+}
+
+#PageBanner-Caption { 
+  color: #005ED1; font-weight: 570;
 }
