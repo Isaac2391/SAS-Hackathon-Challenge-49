@@ -16,7 +16,6 @@ A simple CSS preset to enable box-sizing, set some text rendering options to dec
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-kerning: auto;
-  outline: 1px red solid; 
 }
 
 html {
@@ -49,4 +48,20 @@ body {
     width: 100vw; height: 6vh; 
     text-align: center; margin-bottom: 10; 
     font-size: 1.2rem; font-family: 'Montserrat';
+}
+
+#TopImages {
+
+  background-color: whitesmoke; 
+  display: flex; justify-content: center; align-items: center; gap: 7vw;
+  width: 100vw; height: 30vh; border-radius: 5%;
+  box-shadow: 10px 10px 15px 10px rgb(0 0 150 / 0.8); padding: 9%;
+
+}
+
+.TopImage.Image {
+
+  width: 22vw; height: 35vh; 
+  border-radius: 10%;
+
 }
