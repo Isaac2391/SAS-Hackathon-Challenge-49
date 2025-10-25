@@ -34,4 +34,3 @@ def submit_suggestion():
 # Run the Flask server
 if __name__ == '__main__':
     app.run(debug=True)
-print("Flask app is running...")

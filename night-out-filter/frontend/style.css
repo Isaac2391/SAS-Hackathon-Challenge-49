@@ -38,17 +38,21 @@ body {
 
 button {cursor: pointer;}
 
+
+/* Landing Page */ 
+
 #Main-Title {
     width: 100vw; height: 10vh;
-     text-align: center; margin-top: 2vh; 
+     text-align: center; margin-top: 0.5vh; 
      font-size: 3rem; font-family: 'Playfair';
 }
 
 #TopNavOptions { 
     background-color: whitesmoke; color: #005EB8; 
-    width: 100vw; height: 6vh; 
+    width: 100vw; height: 8vh; 
     text-align: center; 
     font-size: 1.2rem; font-family: 'Montserrat';
+    margin-top: -6.5vh;
 }
 
 .TopNavButton {
@@ -62,22 +66,24 @@ button {cursor: pointer;}
 
 #TopImages {
 
-  background-color: whitesmoke;   box-shadow: 15px 2px 20px 5px gainsboro; 
+  background-color: whitesmoke;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   display: flex; justify-content: center; align-items: center; gap: 7vw;
-  width: 100vw; height: 30vh; 
+  width: 100vw; height: 1vh;
   border-radius: 5%; margin-top: 5vh;
   padding: 9%;
 
 }
 
 .TopImage.Image {
-  width: 22vw; height: 35vh; 
+  width: 25%; height: auto; 
+  max-height: 300px;
   border-radius: 10%;
 }
 
 #PageBanner{
-  display: flex; align-content: center; justify-content: center; gap: 5%;
-  width: 100vw; height: 30vh; margin-top: 5vh;
+  display: flex; align-content: center; justify-content: center; gap: 1.2%;
+  width: 100vw; height: 30vh; margin-top: 3vh;
   background-color: #005EB8; 
 }
 
@@ -87,32 +93,35 @@ button {cursor: pointer;}
 }
 
 #PageBanner-Title { 
-  width: fit-content; height: fit-content; padding: 2%; 
+  width: fit-content; height: fit-content; padding: 1.5%; 
   color: #005EB8; background-color: whitesmoke;
   font-family: 'Playfair';
-  margin-left: 20vw; 
+  margin-left: 20vw;  border-radius: 7%; margin-top: 1.5vh;
 }
 
 #PageBanner-Caption { 
   color: whitesmoke; 
   font-weight: 570; font-style: italic; 
-  border-radius: 7%;
+  border-radius: 7%; margin-top: -3vh;
   height: 10vw; height: 12vh; padding: 2%; 
 }
 
 #PageBanner-Button { 
-
+  
+  position: absolute;
   background-color: whitesmoke; color: #005ED1; border: 0px; 
-  padding: 2%; border-radius: 7%; 
+  padding: 1%; border-radius: 7%; margin-top: -2vh; margin-left: -9.41vw;
   font-weight: bold; 
 
 }
 
 #BannerImage { 
-  height: 40vh; width: 38vw; 
+  width: 40%; height: 45vh;
+  max-height: 400px;
   border-radius: 6%; 
 }
 
+<<<<<<< HEAD
 /* Suggestions page */
 
 /* ===== GLOBAL HEADER / NAV BAR ===== */
@@ -283,3 +292,9 @@ button {
 button:hover {
   transform: scale(1.2);
 }
+=======
+/* Event Swiping Page */ 
+
+
+
+>>>>>>> 4ab6355a164b608bd650a8b0e093a7e8fe2d9804

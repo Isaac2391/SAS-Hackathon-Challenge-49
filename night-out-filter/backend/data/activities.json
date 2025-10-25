@@ -6,7 +6,8 @@
     "description": "Interactive darts and cocktails in Merchant City.",
     "base_cost": 25,
     "location": "Merchant City",
-    "tags": ["Competitive", "Social", "Christmas", "Team Bonding", "Fun"]
+    "tags": ["Social", "Casual"],
+    "image_url": "https://wtop.com/wp-content/uploads/2023/12/120623_darts.jpg"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "description": "Cozy whisky pub with an unmatched whisky selection.",
     "base_cost": 15,
     "location": "Hope Street",
-    "tags": ["Chill", "Whisky", "Hidden Gem", "Casual", "After Work"]
+    "tags": ["Casual", "Social"],
+    "image_url": "https://th.bing.com/th/id/OIP.adLwFffpAzhE9r_BWSf_ZwHaEK?w=345&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "description": "Lively venue with axe throwing, beer pong, and karaoke.",
     "base_cost": 30,
     "location": "St Enoch Centre",
-    "tags": ["Energetic", "Competitive", "Group", "Loud", "Weekend"]
+    "tags": ["Energetic", "Competitive"],
+    "image_url": "https://th.bing.com/th/id/OIP.TqyTKCj7Ht3CV90P_49MUAHaEK?w=329&h=185&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "description": "Legendary venue known for intimate gigs and local acts.",
     "base_cost": 20,
     "location": "St Vincent Street",
-    "tags": ["Music", "Energetic", "Hidden Gem", "Social", "Weekend"]
+    "tags": ["Celebration", "Energetic"],
+    "image_url": "https://th.bing.com/th/id/OIP.3qjYCW3tYiT2zwmDitEjfAHaD3?w=253&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "description": "Popular escape room experience with themed challenges.",
     "base_cost": 22,
     "location": "Bath Street",
-    "tags": ["Team Bonding", "Puzzle", "Competitive", "Indoor", "Adventurous"]
+    "tags": ["Competitive", "Hidden Gem"],
+    "image_url": "https://th.bing.com/th/id/OIP.piw0Nn7sVU7UKhT8NeqcNAHaE3?w=264&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "description": "Underground bar offering live music, drinks, and late vibes.",
     "base_cost": 18,
     "location": "Sauchiehall Street",
-    "tags": ["Music", "Casual", "Late Night", "Hidden Gem", "Indie"]
+    "tags": ["Casual", "Hidden Gem"],
+    "image_url": "https://th.bing.com/th/id/OIP.ZiNcuXEH9XBkzqhetYq9-gHaEJ?w=320&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "description": "Laid-back spot serving authentic Neapolitan pizza.",
     "base_cost": 20,
     "location": "Miller Street",
-    "tags": ["Food", "Casual", "Affordable", "Chill", "Social"]
+    "tags": ["Casual", "Celebration"],
+    "image_url": "https://th.bing.com/th/id/OIP.WzhbsTLZWsjDYRJN0UtQrAHaEK?w=323&h=182&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "description": "Elegant bar and restaurant housed in a historic building.",
     "base_cost": 35,
     "location": "Ingram Street",
-    "tags": ["Fancy", "Cocktails", "Classy", "Romantic", "Celebration"]
+    "tags": ["Casual", "Celebration"],
+    "image_url": "https://myfrenchcountryhomebox.com/wp-content/uploads/2023/11/Le-Bar-at-Shangri-La-Hotel-.jpeg"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "description": "Indoor mini golf with drinks, music, and neon lights.",
     "base_cost": 28,
     "location": "Dundas Lane",
-    "tags": ["Fun", "Group", "Competitive", "Modern", "Weekend"]
+    "tags": ["Casual", "Competitive"],
+    "image_url": "https://th.bing.com/th/id/OIP.qdV759suRO5IfQ8VYJA0uQHaFj?w=229&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   },
   {
     "id": 10,
@@ -87,6 +96,7 @@
     "description": "Jazz club offering smooth tunes and relaxed vibes.",
     "base_cost": 25,
     "location": "Sauchiehall Street",
-    "tags": ["Jazz", "Chill", "Hidden Gem", "Music", "Evening"]
+    "tags": ["Casual", "Hidden Gem"],
+    "image_url": "https://th.bing.com/th/id/OIP.q9i9rkzJGdGT1iFXDcKshgHaEc?w=305&h=183&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
   }
 ]
