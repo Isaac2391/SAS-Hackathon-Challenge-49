@@ -38,7 +38,7 @@ def Search(search_category):
         pagelist.extend(places_results["results"])
     
 
-Search()
+
     
     
     
