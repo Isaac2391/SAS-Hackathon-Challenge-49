@@ -6,7 +6,7 @@
     "description": "Interactive darts and cocktails in Merchant City.",
     "base_cost": 25,
     "location": "Merchant City",
-    "tags": ["Competitive", "Social", "Christmas", "Team Bonding", "Fun"]
+    "tags": ["Social", "Casual"]
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "Cozy whisky pub with an unmatched whisky selection.",
     "base_cost": 15,
     "location": "Hope Street",
-    "tags": ["Chill", "Whisky", "Hidden Gem", "Casual", "After Work"]
+    "tags": ["Casual", "Social"]
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "Lively venue with axe throwing, beer pong, and karaoke.",
     "base_cost": 30,
     "location": "St Enoch Centre",
-    "tags": ["Energetic", "Competitive", "Group", "Loud", "Weekend"]
+    "tags": ["Energetic", "Competitive"]
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "Legendary venue known for intimate gigs and local acts.",
     "base_cost": 20,
     "location": "St Vincent Street",
-    "tags": ["Music", "Energetic", "Hidden Gem", "Social", "Weekend"]
+    "tags": ["Celebration", "Energetic"]
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Popular escape room experience with themed challenges.",
     "base_cost": 22,
     "location": "Bath Street",
-    "tags": ["Team Bonding", "Puzzle", "Competitive", "Indoor", "Adventurous"]
+    "tags": ["Competitive", "Hidden Gem"]
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "Underground bar offering live music, drinks, and late vibes.",
     "base_cost": 18,
     "location": "Sauchiehall Street",
-    "tags": ["Music", "Casual", "Late Night", "Hidden Gem", "Indie"]
+    "tags": ["Casual", "Hidden Gem"]
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "Laid-back spot serving authentic Neapolitan pizza.",
     "base_cost": 20,
     "location": "Miller Street",
-    "tags": ["Food", "Casual", "Affordable", "Chill", "Social"]
+    "tags": ["Casual", "Celebration"]
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "Elegant bar and restaurant housed in a historic building.",
     "base_cost": 35,
     "location": "Ingram Street",
-    "tags": ["Fancy", "Cocktails", "Classy", "Romantic", "Celebration"]
+    "tags": ["Casual", "Celebration"]
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "Indoor mini golf with drinks, music, and neon lights.",
     "base_cost": 28,
     "location": "Dundas Lane",
-    "tags": ["Fun", "Group", "Competitive", "Modern", "Weekend"]
+    "tags": ["Casual", "Competitive"]
   },
   {
     "id": 10,
@@ -87,6 +87,6 @@
     "description": "Jazz club offering smooth tunes and relaxed vibes.",
     "base_cost": 25,
     "location": "Sauchiehall Street",
-    "tags": ["Jazz", "Chill", "Hidden Gem", "Music", "Evening"]
+    "tags": ["Casual", "Hidden Gem"]
   }
 ]
