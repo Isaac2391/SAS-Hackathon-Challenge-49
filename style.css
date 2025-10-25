@@ -33,3 +33,7 @@ body {
 
     width: 100vw; height: 10vh; text-align: center; margin-bottom: 0; 
 }
+
+#Second-MainTitle { 
+    width: 100vw; height: 10vh; text-align: center; margin-bottom: 10; 
+}
