@@ -24,6 +24,12 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/* Main Background Color: #005EB8 */
+/* Secondary Background Color: whitesmoke */
+/* Main Text Color: Whitesmoke */
+/* Secondary Text Color: Black */
+
+
 body {
   margin: 0;
   background-color: #005EB8; color: whitesmoke;
@@ -31,9 +37,14 @@ body {
 
 #Main-Title {
 
-    width: 100vw; height: 10vh; text-align: center; margin-bottom: 0; 
+    width: 100vw; height: 10vh;
+     text-align: center; margin-bottom: 0; 
+     font-size: 3rem; 
 }
 
 #Second-MainTitle { 
-    width: 100vw; height: 10vh; text-align: center; margin-bottom: 10; 
+    background-color: whitesmoke; color: #005EB8; 
+    width: 100vw; height: 6vh; 
+    text-align: center; margin-bottom: 10; 
+    font-size: 1.2rem; 
 }
