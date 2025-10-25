@@ -5,7 +5,7 @@ pb.setup_db()
 
 def get_team_preferences():
     # pull all users from the people table and average their traits
-    conn = sqlite3.connect("places.db")
+    conn = sqlite3.connect(str(pb.DB_PATH))
     c = conn.cursor()
 
     c.execute("SELECT Social, Competitive, Hidden_Gem, Casual, Celebration, Energetic FROM people")
@@ -34,7 +34,6 @@ def get_team_preferences():
         print(f"  {k.capitalize()}: {v}")
 
     return team_profile
-
 
 def suggest_venues():
     # find venues that best match the team’s average personality."""
