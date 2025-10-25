@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Planner Glasgow </title>
+    <link rel="stylesheet" href="web.css">
+
+
+</head>
+
+<body>
+
+<h2>Suggestions Form</h2>
+<p>Share you activity ideas to help us build a more engaging workplace!</p>
+
+<div class="responsive-form">
+
+ <form id="suggestionForm">
+   <label for="activityName">Activity name:</label>
+   <input type="text" id="activityName" name="activityName" placeholder="Activity" required>
+
+
+
+   <label for="activityType">Activity type:</label>
+   <select id="activityType" name="activityType">
+     <option value="Choose an option">Choose an option</option>
+     <option value="Team-building">Team-building</option>
+     <option value="Social">Social</option>
+     <option value="Drinking">Drinking</option>
+    </select>
+
+    <label for="location">Suggest a venue:</label>
+   <input type="text" id="location" name="location" placeholder="location">
+    
+    <label for="extraInfo">Anything</label>
+    <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+    <label for="checkbox"> I confirm this suggestion is appropriate for the workplace</label>
+    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" required>
+    
+    <input type="submit" value="Submit">
+    
+ </form>
+
+</div>
+
+
+
+</body>
+</html>
+<script>
+document.getElementById("suggestionForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Stop the form from reloading the page
+
+    const data = {
+        activityName: document.getElementById("activityName").value,
+        activityType: document.getElementById("activityType").value,
+        location: document.getElementById("location").value,
+        message: document.getElementById("message").value
+    };
+
+    fetch("http://127.0.0.1:5000/submit_suggestion", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        return response.json();
+    })
+    .then(result => {
+        alert("Suggestion submitted successfully!");
+        document.getElementById("suggestionForm").reset();
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("There was a problem submitting your suggestion.");
+    });
+});
+</script>

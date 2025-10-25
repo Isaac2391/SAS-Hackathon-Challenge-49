@@ -16,7 +16,6 @@ A simple CSS preset to enable box-sizing, set some text rendering options to dec
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-kerning: auto;
-  outline: 1px red solid; 
 }
 
 html {
@@ -37,16 +36,79 @@ body {
   background-color: #005EB8; color: whitesmoke;
 }
 
-#Main-Title {
+button {cursor: pointer;}
 
+#Main-Title {
     width: 100vw; height: 10vh;
-     text-align: center; margin-bottom: 0; 
+     text-align: center; margin-top: 2vh; 
      font-size: 3rem; font-family: 'Playfair';
 }
 
-#Second-MainTitle { 
+#TopNavOptions { 
     background-color: whitesmoke; color: #005EB8; 
     width: 100vw; height: 6vh; 
-    text-align: center; margin-bottom: 10; 
+    text-align: center; 
     font-size: 1.2rem; font-family: 'Montserrat';
+}
+
+.TopNavButton {
+
+  background-color: #005EB8; color: whitesmoke; 
+  border: 0px; border-radius: 9%; 
+  padding: 0.3%; 
+  font-weight: bold; 
+
+}
+
+#TopImages {
+
+  background-color: whitesmoke;   box-shadow: 15px 2px 20px 5px gainsboro; 
+  display: flex; justify-content: center; align-items: center; gap: 7vw;
+  width: 100vw; height: 30vh; 
+  border-radius: 5%; margin-top: 5vh;
+  padding: 9%;
+
+}
+
+.TopImage.Image {
+  width: 22vw; height: 35vh; 
+  border-radius: 10%;
+}
+
+#PageBanner{
+  display: flex; align-content: center; justify-content: center; gap: 5%;
+  width: 100vw; height: 30vh; margin-top: 5vh;
+  background-color: #005EB8; 
+}
+
+#PageBanner-TextContent {
+  text-align: end; margin-right: 0vw; 
+  width: 50vw; height: 40vh;
+}
+
+#PageBanner-Title { 
+  width: fit-content; height: fit-content; padding: 2%; 
+  color: #005EB8; background-color: whitesmoke;
+  font-family: 'Playfair';
+  margin-left: 20vw; 
+}
+
+#PageBanner-Caption { 
+  color: whitesmoke; 
+  font-weight: 570; font-style: italic; 
+  border-radius: 7%;
+  height: 10vw; height: 12vh; padding: 2%; 
+}
+
+#PageBanner-Button { 
+
+  background-color: whitesmoke; color: #005ED1; border: 0px; 
+  padding: 2%; border-radius: 7%; 
+  font-weight: bold; 
+
+}
+
+#BannerImage { 
+  height: 40vh; width: 38vw; 
+  border-radius: 6%; 
 }
