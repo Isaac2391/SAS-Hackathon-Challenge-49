@@ -1,9 +1,9 @@
 const activities = [
   {
-    name: "The Tipsy Goat",
-    description: "A lively bar with cheap cocktails and great music.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
-    tags: ["bar", "cheap", "lively"]
+    name: "Potluck",
+    description: "Everyone brings a dish to share for a cozy evening in.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Eat_Alberta_Potluck_%287072671637%29.jpg/1200px-Eat_Alberta_Potluck_%287072671637%29.jpg",
+    tags: ["Social", "cheap", "Casual"]
   },
   {
     name: "Karaoke Kingdom",
@@ -11,16 +11,11 @@ const activities = [
     image: "https://images.unsplash.com/photo-1556745753-b2904692b3cd",
     tags: ["karaoke", "fun", "group"]
   },
-  {
-    name: "Zen Lounge",
-    description: "A chill cocktail lounge for relaxed vibes and fancy drinks.",
-    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b",
-    tags: ["cocktail", "fancy", "chill"]
-  },
+
   {
     name: "Quiz & Sip",
     description: "Trivia night every Thursday — test your smarts over pints!",
-    image: "https://images.unsplash.com/photo-1601933470928-c0b8e17e3b5b",
+    image: "https://thebigfatquiz.com/wp-content/uploads/2021/06/Quiz_Night-41-1024x602.jpeg",
     tags: ["quiz", "fun", "pub"]
   }
 ];
