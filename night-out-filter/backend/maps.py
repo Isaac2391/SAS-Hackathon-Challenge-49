@@ -4,7 +4,6 @@ import requests
 import time
 from pprint import pprint
 
-API_KEY = "AIzaSyCZmQFw2CQ7UUddbhIzjiLm_rFAlG2xucU"
 
 gmaps = googlemaps.Client(key=API_KEY)
 
