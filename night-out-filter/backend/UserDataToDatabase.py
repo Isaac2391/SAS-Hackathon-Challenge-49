@@ -1,5 +1,5 @@
 import sqlite3
-import placesdatabase as pb
+import Placesdatabase as pb
 
 pb.setup_db()
 
