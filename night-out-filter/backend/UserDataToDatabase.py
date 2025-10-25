@@ -3,6 +3,23 @@ import Placesdatabase as pb
 
 pb.setup_db()
 
+def fakePreference_input_for_testing(): 
+    prefTest_insert_query = """INSERT INTO people
+                          (user_id, Social, Competitive, Hidden_Gem, Casual, Celebration, Energetic) 
+                           VALUES 
+                          (14554,0,1,1,0,0,1)"""
+                          
+    conn = sqlite3.connect(str(pb.DB_PATH))
+    c = conn.cursor() 
+    count = c.execute(prefTest_insert_query)
+    sqliteConnection.commit()
+    print("Record inserted successfully into People table ", c.rowcount)
+
+try:
+ fakePreference_input_for_testing() 
+except Exception as e:
+    print(f"The following error occured when trying to insert a test row: {e}")
+
 def get_team_preferences():
     # pull all users from the people table and average their traits
     conn = sqlite3.connect(str(pb.DB_PATH))
@@ -96,10 +113,11 @@ def generate_html_output():
 
     html += "</body></html>"
 
-    with open("frontend/finalsuggestedvalues.html", "w", encoding="utf-8") as f:
+    with open("frontend/FinalSuggestedVenues.html", "w", encoding="utf-8") as f:
         f.write(html)
 
-    print("finalsuggestedvalues.html created successfully!")
+    print("FinalSuggestedVenues.html created successfully!")
 
 if __name__ == "__main__":
     generate_html_output()
+
