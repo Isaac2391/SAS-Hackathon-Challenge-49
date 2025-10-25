@@ -1,53 +1,57 @@
+# completed the functions so they
+#- load venue data from a JSON file,
+#- filter venues based on budget, mood, and occasion,
+#- calculate an overall fun score (OFS) for each venue,
+#- and return the top 5 recommended venues.
+
 import json
 import random
+from pathlib import Path
 
-# Load venues from JSON file
-def load_venues(file_path="backend/data/activities.json"):
-    with open(file_path, 'r') as file:
-        venues = json.load(file)
-    return venues
+DATA_PATH = Path(__file__).resolve().parent / "activities.json"
 
-# Filter functions
-def filter_by_budget(venues, budget):
-    return [v for v in venues if v["base_cost"] <= budget]
+def load_venues(file_path: str | None = None):
+    p = Path(file_path) if file_path else DATA_PATH
+    with p.open("r", encoding="utf-8") as f:
+        return json.load(f)
 
-# Filter by mood
-def filter_by_mood(venues, mood):
+def filter_by_budget(venues, budget: float | int):
+    try:
+        b = float(budget)
+    except (TypeError, ValueError):
+        b = 30
+    return [v for v in venues if float(v.get("base_cost", 0)) <= b]
+
+def filter_by_mood(venues, mood: str | None):
     if not mood:
         return venues
-    return [v for v in venues if mood in v["tags"]]
+    mood = mood.strip().lower()
+    return [v for v in venues if mood in [t.lower() for t in v.get("tags", [])]]
 
-def filter_by_occasion(venues, occasion):
+def filter_by_occasion(venues, occasion: str | None):
     if not occasion:
         return venues
-    return [v for v in venues if occasion in v["tags"]]
+    occasion = occasion.strip().lower()
+    return [v for v in venues if occasion in [t.lower() for t in v.get("tags", [])]]
 
-# Calculate Office Fun Score (OFS)
 def calculate_ofs(venue, mood, budget, occasion):
-    score = 5  # base score
-    if mood in venue["tags"]:
-        score += 2  # extra points for matching mood
-    if occasion in venue["tags"]:
-        score += 2  # extra points for matching occasion
-    if budget >= venue["base_cost"]:
-        score += 1  # extra points if affordable
-    score += random.randint(0, 2)  # small random variation
-    return min(score, 10)  # cap at 10
+    score = 5
+    tags = [t.lower() for t in venue.get("tags", [])]
+    if mood and mood.lower() in tags: score += 2
+    if occasion and occasion.lower() in tags: score += 2
+    try:
+        if float(budget) >= float(venue.get("base_cost", 0)): score += 1
+    except (TypeError, ValueError):
+        pass
+    score += random.randint(0, 2)
+    return min(score, 10)
 
-# Main recommendation function
-def get_recommendations(mood=None, budget=30, occasion=None, file_path="activities.json"):
+def get_recommendations(mood=None, budget=30, occasion=None, file_path=None):
     venues = load_venues(file_path)
-
-    # Apply filters
     filtered = filter_by_budget(venues, budget)
     filtered = filter_by_mood(filtered, mood)
     filtered = filter_by_occasion(filtered, occasion)
-
-    # Score each venue
     for v in filtered:
         v["ofs"] = calculate_ofs(v, mood, budget, occasion)
-
-    # Sort by fun score and return top 5
-    top5 = sorted(filtered, key=lambda x: x["ofs"], reverse=True)[:5]
-    return top5
+    return sorted(filtered, key=lambda x: x["ofs"], reverse=True)[:5]
 
