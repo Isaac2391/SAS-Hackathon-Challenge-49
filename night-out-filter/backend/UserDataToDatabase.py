@@ -13,7 +13,7 @@ def get_team_preferences():
     conn.close()
 
     if not rows:
-        print("⚠️ No user data found.")
+        print("No user data found.")
         return None
 
     # average each category
@@ -28,7 +28,7 @@ def get_team_preferences():
     tags = ["social", "competitive", "hidden_gem", "casual", "celebration", "energetic"]
     team_profile = dict(zip(tags, averages))
 
-    print("📊 Team average preferences:")
+    print("Team average preferences:")
     for k, v in team_profile.items():
         print(f"  {k.capitalize()}: {v}")
 
@@ -99,7 +99,7 @@ def generate_html_output():
     with open("frontend/finalsuggestedvalues.html", "w", encoding="utf-8") as f:
         f.write(html)
 
-    print("✅ finalsuggestedvalues.html created successfully!")
+    print("finalsuggestedvalues.html created successfully!")
 
 if __name__ == "__main__":
     generate_html_output()
