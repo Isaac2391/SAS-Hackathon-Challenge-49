@@ -8,7 +8,8 @@ def get_team_preferences():
     conn = sqlite3.connect("places.db")
     c = conn.cursor()
 
-    c.execute("SELECT social, competitive, hidden_gem, casual, celebration, energetic FROM people")
+    c.execute("SELECT Social, Competitive, Hidden_Gem, Casual, Celebration, Energetic FROM people")
+
     rows = c.fetchall()
     conn.close()
 
