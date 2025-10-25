@@ -46,4 +46,4 @@ def display_database():
         print(entry)
 
     conn.close()
-    display_database()
+display_database()
