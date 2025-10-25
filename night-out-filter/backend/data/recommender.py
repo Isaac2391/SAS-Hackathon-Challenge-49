@@ -1,11 +1,13 @@
 import json
 import random
 
+#function to load venues from our JSON file
 def load_venues(file_path):
     with open(file_path, 'r') as file:
         venues = json.load(file)
     return venues
 
+#function to filter venues by budget and mood
 def filter_by_budget(venues, budget):
     return [v for v in venues if v["base_cost"] <= budget]
 
