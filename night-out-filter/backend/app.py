@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from backend.data.recommender import recommend_venues
+from backend.data.recommender import get_recommendations
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -9,7 +9,7 @@ CORS(app)
 def recommend():
     data = request.get_json(force=True)
     budget = data.get("budget", 30)
-    result = recommend_venues(
+    result = get_recommendations(
         mood=data.get("mood"),
         budget=budget,
         occasion=data.get("occasion")
