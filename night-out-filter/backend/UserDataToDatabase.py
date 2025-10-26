@@ -1,6 +1,6 @@
 import sqlite3
 from pathlib import Path
-import Placesdatabase as pb  # lowercase import (case-sensitive on some systems)
+import Placesdatabase as pb  
 
 DB_PATH = Path(__file__).resolve().parent / "places.db"
 
@@ -25,7 +25,7 @@ except Exception as e:
 
 def get_team_preferences():
     # pull all users from the people table and average their traits
-    conn = sqlite3.connect("DB_PATH")
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
 
     c.execute("SELECT Social, Competitive, Hidden_Gem, Casual, Celebration, Energetic FROM people")
