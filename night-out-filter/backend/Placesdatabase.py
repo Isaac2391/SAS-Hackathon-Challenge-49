@@ -95,7 +95,8 @@ def get_venues():
     ]
 
 def _parse_budget(budget_str: str) -> float:
-
+    """function gets budget numbers and cleans 
+    them up e.g adding pound sign """
     if not budget_str:
         return 0  
     
