@@ -67,3 +67,7 @@ document.getElementById("dislike").addEventListener("click", () => {
 });
 
 showCard(current);
+
+
+
+
