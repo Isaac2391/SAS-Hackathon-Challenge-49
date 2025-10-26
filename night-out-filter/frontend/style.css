@@ -121,7 +121,6 @@ button {cursor: pointer;}
   border-radius: 6%; 
 }
 
-<<<<<<< HEAD
 /* Suggestions page */
 
 /* ===== GLOBAL HEADER / NAV BAR ===== */
@@ -276,9 +275,9 @@ input[type=submit]:hover {
 .buttons {
   display: flex;
   justify-content: space-around;
-}
+} 
 
-button {
+/* button {
   font-size: 1.5rem;
   border: none;
   border-radius: 50%;
@@ -287,14 +286,9 @@ button {
   background-color: white;
   color: #333;
   transition: transform 0.2s;
-}
+} */
 
 button:hover {
   transform: scale(1.2);
 }
-=======
 /* Event Swiping Page */ 
-
-
-
->>>>>>> 4ab6355a164b608bd650a8b0e093a7e8fe2d9804
