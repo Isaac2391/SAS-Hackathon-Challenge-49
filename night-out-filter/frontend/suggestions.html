@@ -101,7 +101,10 @@ document.getElementById("suggestionForm").addEventListener("submit", function(e)
         activityName: document.getElementById("activityName").value,
         activityType: document.getElementById("activityType").value,
         location: document.getElementById("location").value,
-        message: document.getElementById("message").value
+        message: document.getElementById("message").value,
+        occasion: document.getElementById("occasion").value,
+        budget: document.getElementById("budget").value,
+        mood: document.getElementById("mood").value
     };
 
     fetch("http://127.0.0.1:5000/submit_suggestion", {

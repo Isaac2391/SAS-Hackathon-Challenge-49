@@ -93,3 +93,39 @@ def get_venues():
         }
         for r in rows
     ]
+
+def _parse_budget(budget_str: str) -> float:
+
+    if not budget_str:
+        return 0  
+    
+   
+    budget_str = budget_str.split('-')[0]
+   
+    budget_str = budget_str.replace('£', '').replace('+', '')
+    
+    try:
+        return float(budget_str)
+    except ValueError:
+        return 0
+
+def add_venue(name: str, description: str, base_cost_str: str, location: str, tags_list: list):
+    """Inserts a new user-suggested venue into the database."""
+    
+    base_cost = _parse_budget(base_cost_str)
+    
+   
+    valid_tags = [tag for tag in tags_list if tag] 
+    tags_json = json.dumps(valid_tags) 
+
+    with sqlite3.connect(DB_PATH) as conn:
+        c = conn.cursor()
+        try:
+            c.execute(
+                "INSERT INTO venues (id, name, description, base_cost, location, tags) VALUES (NULL, ?, ?, ?, ?, ?)",
+                (name, description, base_cost, location, tags_json)
+            )
+            conn.commit()
+            print(f"Successfully added new venue: {name}")
+        except Exception as e:
+            print(f"Error adding venue: {e}")
