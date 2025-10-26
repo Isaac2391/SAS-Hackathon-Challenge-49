@@ -401,10 +401,6 @@ button:hover {
 
 /* Event Swiping Page */
 
-} 
-
- 
-
 header { 
 
   flex-shrink: 0; /* keep header fixed height */ 
