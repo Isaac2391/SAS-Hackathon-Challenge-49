@@ -228,17 +228,17 @@ input[type=submit]:hover {
 
 /* Event Swiping Page */
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #005EB8, #002244);
   font-family: 'Montserrat', sans-serif;
   color: white;
   height: 100vh;
-  overflow: hidden; /* stop scrolling completely */
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
-}
+} */
 
 header {
   flex-shrink: 0; /* keep header fixed height */
