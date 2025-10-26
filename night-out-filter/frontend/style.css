@@ -297,10 +297,10 @@ header {
 .buttons {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
 }
 
-button {
+
+/* button {
   font-size: 1.5rem;
   border: none;
   border-radius: 50%;
@@ -309,7 +309,7 @@ button {
   background-color: white;
   color: #333;
   transition: transform 0.2s;
-}
+} */
 
 button:hover {
   transform: scale(1.2);
@@ -355,3 +355,4 @@ button:hover {
 .nav-button:hover {
   background-color: #003d80;
 }
+/* Event Swiping Page */ 

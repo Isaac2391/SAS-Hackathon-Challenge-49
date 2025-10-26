@@ -1,5 +1,8 @@
 import sqlite3
-import Placesdatabase as pb
+from pathlib import Path
+import Placesdatabase as pb  
+
+DB_PATH = Path(__file__).resolve().parent / "places.db"
 
 pb.setup_db()
 
@@ -12,7 +15,7 @@ def fakePreference_input_for_testing():
     conn = sqlite3.connect(str(pb.DB_PATH))
     c = conn.cursor() 
     count = c.execute(prefTest_insert_query)
-    sqliteConnection.commit()
+    conn.commit()
     print("Record inserted successfully into People table ", c.rowcount)
 
 try:
@@ -22,7 +25,7 @@ except Exception as e:
 
 def get_team_preferences():
     # pull all users from the people table and average their traits
-    conn = sqlite3.connect(str(pb.DB_PATH))
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
 
     c.execute("SELECT Social, Competitive, Hidden_Gem, Casual, Celebration, Energetic FROM people")
